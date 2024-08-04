@@ -77,6 +77,10 @@ SELECT COUNT(*) AS number_of_enrolment FROM Learners WHERE SelectedCourse=3
 -- Count the number of enrollment done in the month of jan
 SELECT COUNT(*) FROM Learners WHERE LearnerEnrollmentData LIKE '%-01-%'
 
+-- Count the number of enrollment done in the month of jan 21
+SELECT COUNT(*) FROM Learners WHERE LearnerEnrollmentData LIKE '%-01-21%'
+
+
 -- UPDATE THE JEVAN DATA WITH YEAR OF EXPERIANCE AND COMPANY
 UPDATE Learners SET YearOfExperonce=2, LearnerCompany='Amazone' WHERE LearnerID=8
 
